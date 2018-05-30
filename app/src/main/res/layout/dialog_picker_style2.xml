@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/trans_bg"
+    android:id="@+id/layout_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="#f0f0f0"
+        android:layout_height="180dp">
+        <TextView
+            android:id="@+id/tv_choose_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="单据类型"
+            android:textColor="#339df3"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="#339df3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <com.wx.project.dialogutil.widget.PickerView
+                android:id="@+id/pickerview"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/bg_shape_gradient" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/color_ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/alertdialog_single_selector"
+            android:text="确认"
+            android:textSize="14sp"
+            android:textColor="#009AFC" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/color_ffffff"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/alertdialog_single_selector"
+            android:text="取消"
+            android:textSize="14sp"
+            android:textColor="#ff7247" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

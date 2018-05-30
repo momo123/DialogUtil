@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BaseWheelView">
+        <attr name="BasenormalTextColor" format="color" />
+        <attr name="BasenormalTextSize" format="dimension" />
+        <attr name="BaseselectedTextColor" format="color" />
+        <attr name="BaseselectedTextSize" format="dimension" />
+        <attr name="BaseunitHight" format="dimension" />
+        <attr name="BaseitemNumber" format="integer"/>
+        <attr name="BaselineColor" format="color" />
+        <attr name="BaselineHeight" format="dimension" />
+        <attr name="BasemaskHight" format="dimension"/>
+        <attr name="BasenoEmpty" format="boolean"/>
+        <attr name="BaseisEnable" format="boolean"/>
+    </declare-styleable>
+
+</resources>

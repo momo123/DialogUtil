@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/trans_bg"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="#f0f0f0"
+        android:layout_height="195dp">
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#009AFC"
+            android:gravity="center"
+            android:text="请选择时间"
+            android:textSize="18sp" />
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#009AFC" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/bg_shape_gradient"
+            android:orientation="horizontal">
+
+            <com.wx.project.dialogutil.widget.DateWheelView
+                android:id="@+id/year_wheel_v"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:BaseitemNumber="3"
+                app:BaselineColor="@android:color/holo_blue_bright"
+                app:BasemaskHight="32dp"
+                app:BasenoEmpty="true"
+                app:BasenormalTextColor="#777"
+                app:BasenormalTextSize="14sp"
+                app:BaseselectedTextColor="#ff000000"
+                app:BaseselectedTextSize="20sp"
+                app:BaseunitHight="50dp"
+                />
+            <com.wx.project.dialogutil.widget.DateWheelView
+                android:id="@+id/month_wheel_v"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:BaseitemNumber="3"
+                app:BaselineColor="@android:color/holo_blue_bright"
+                app:BasemaskHight="32dp"
+                app:BasenoEmpty="true"
+                app:BasenormalTextColor="#777"
+                app:BasenormalTextSize="14sp"
+                app:BaseselectedTextColor="#ff000000"
+                app:BaseselectedTextSize="22sp"
+                app:BaseunitHight="50dp"
+                />
+            <com.wx.project.dialogutil.widget.DateWheelView
+                android:id="@+id/day_wheel_v"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:BaseitemNumber="3"
+                app:BaselineColor="@android:color/holo_blue_bright"
+                app:BasemaskHight="32dp"
+                app:BasenoEmpty="true"
+                app:BasenormalTextColor="#777"
+                app:BasenormalTextSize="14sp"
+                app:BaseselectedTextColor="#ff000000"
+                app:BaseselectedTextSize="22sp"
+                app:BaseunitHight="50dp"
+                />
+            <com.wx.project.dialogutil.widget.DateWheelView
+                android:id="@+id/hour_wheel_v"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:BaseitemNumber="3"
+                app:BaselineColor="@android:color/holo_blue_bright"
+                app:BasemaskHight="32dp"
+                app:BasenoEmpty="true"
+                app:BasenormalTextColor="#777"
+                app:BasenormalTextSize="14sp"
+                app:BaseselectedTextColor="#ff000000"
+                app:BaseselectedTextSize="22sp"
+                app:BaseunitHight="50dp"
+                />
+            <com.wx.project.dialogutil.widget.DateWheelView
+                android:id="@+id/minute_wheel_v"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:BaseitemNumber="3"
+                app:BaselineColor="@android:color/holo_blue_bright"
+                app:BasemaskHight="32dp"
+                app:BasenoEmpty="true"
+                app:BasenormalTextColor="#777"
+                app:BasenormalTextSize="14sp"
+                app:BaseselectedTextColor="#ff000000"
+                app:BaseselectedTextSize="22sp"
+                app:BaseunitHight="50dp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/color_ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/alertdialog_single_selector"
+            android:text="确认"
+            android:textSize="14sp"
+            android:textColor="#009AFC" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/color_ffffff"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/alertdialog_single_selector"
+            android:text="取消"
+            android:textSize="14sp"
+            android:textColor="#ff7247" />
+    </LinearLayout>
+
+    
+</LinearLayout>
